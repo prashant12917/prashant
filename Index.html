@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikers Era Web-page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="Index.html"><img src="image/logo 1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" id="hidemenu" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">BLOG </a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="showmenu" onclick="showmenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>
+                World's Best Bikers community
+            </h1>
+            <p><br> Selling,buying and renting of bikes has been a lot easier with the help of bikers era.
+                <br>Now all u need is bikers era to fulfill all ur riding dreams. </br>
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <script>
+
+        {
+
+
+            function showmenu() {
+                var navLinks = document.getElementById("navLinks");
+                navLinks.style.right = "0%";
+            }
+            function hidemenu() {
+                var navLinks = document.getElementById("navLinks");
+                navLinks.style.right = "-200px";
+
+            }
+        } 
+    </script>
+
+</body>
+
+</html>
